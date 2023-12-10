@@ -457,6 +457,7 @@ int dsda_LegacySkyTexture(int* sky) {
   }
   else {
     switch (gameepisode) {
+      default: // Fallback if gameepisode unknown
       case 1:
         *sky = R_TextureNumForName ("SKY1");
         break;
